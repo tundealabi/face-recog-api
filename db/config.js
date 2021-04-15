@@ -4,7 +4,9 @@ let configObject = {
     client: 'pg',
     connection: {
 		connectionString: "postgres://kheexhfsjotrrq:74299c55de2b551904a443a50868f811bd840f9575f893386f4367051cb28ed5@ec2-107-22-83-3.compute-1.amazonaws.com:5432/ddrqcl3pnasidc",
-		ssl: true
+		ssl: {
+    rejectUnauthorized: false
+  }
 	}
 	
 };
