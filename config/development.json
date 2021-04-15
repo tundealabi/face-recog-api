@@ -7,5 +7,8 @@
             "database": "FACE_RECOG_PGDATABASE_LOCAL",
             "port": "FACE_RECOG_PGPORT_LOCAL"
         }
+    },
+    "Image": {
+        "clarifaiSecret": "CLARIFAI_API_KEY"
     }
 }

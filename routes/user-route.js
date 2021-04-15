@@ -10,7 +10,6 @@ router
             try {
                 const { email, password } = req.body;
                 const result  = await db('login').where({email})
-                console.log("result",result)
                 if(result.length){
                     const comparePassword = await bcrypt.compare(password,result[0].hash);
                     if(comparePassword){
@@ -41,8 +40,6 @@ router
                         hash: hashPassword,
                         email
                     },"*");
-                    console.log("account",saveUserToAccount);
-                    console.log("login",saveUserToLogin);
                     res.json(saveUserToAccount[0]);
                 });
             } catch (error) {
@@ -50,12 +47,6 @@ router
                 next(error);
             }
         })
-
-// router
-//     .route("/create-table")
-//         .get(async(req,res,next) => {
-
-//         })
 
 
 module.exports = router;

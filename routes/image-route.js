@@ -8,7 +8,6 @@ router
     .route('/image')
         .post( validateImageOnReceive, async (req,res,next) => {
             try {
-				console.log(req.body)
                 const { image, email } = req.body;
                 const faceRecognitionRes = await faceRecognition(image);
                     await db('accounts').where({email}).increment('entries',1);

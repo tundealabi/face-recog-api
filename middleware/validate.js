@@ -14,7 +14,6 @@ const validateUserOnLogin = (req,res,next) => {
 }
 
 const validateImageOnReceive = (req,res,next) => {
-	console.log(req.body)
     const { error } = validateImage({image: req.body.image});
     if (error) return res.status(400).json({message:error.details[0].message});
         return next();

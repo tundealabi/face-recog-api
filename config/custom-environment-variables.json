@@ -11,5 +11,8 @@
         "dbConfigHeroku": {
             "connectionString": "DATABASE_URL"
         }
+    },
+    "Image": {
+        "clarifaiSecret": "CLARIFAI_API_KEY"
     }
 }
