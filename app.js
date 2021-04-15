@@ -10,6 +10,7 @@ app.use(express.json({limit:'50mb'}));
 app.use("/user",userSigninRoute);
 app.use("/face-recog", require("./routes/image-route"));
 
+app.get("/",(req,res,next) => res.json({message: "Welcome home"}))
 
 app.use((err,req,res,next)=>{
     console.log(err.message);
