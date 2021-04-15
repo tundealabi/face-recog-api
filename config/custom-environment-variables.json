@@ -1,0 +1,15 @@
+{
+    "User": {
+        "dbConfigLocal": {
+            "user" : "FACE_RECOG_PGUSER_LOCAL",
+            "password": "FACE_RECOG_PGPASSWORD_LOCAL",
+            "host": "FACE_RECOG_PGHOST_LOCAL",
+            "database": "FACE_RECOG_PGDATABASE_LOCAL",
+            "port": "FACE_RECOG_PGPORT_LOCAL"
+    
+        },
+        "dbConfigHeroku": {
+            "connectionString": "DATABASE_URL"
+        }
+    }
+}

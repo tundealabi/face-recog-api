@@ -1,0 +1,15 @@
+{
+    "User": {
+        "dbConfigLocal": {
+            "user" : "",
+            "password": "",
+            "host": "",
+            "database": "",
+            "port": ""
+    
+        },
+        "dbConfigHeroku": {
+            "connectionString": ""
+        }
+    }
+}

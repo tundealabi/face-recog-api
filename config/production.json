@@ -1,0 +1,7 @@
+{
+    "User": {
+        "dbConfigHeroku": {
+            "connectionString" : "DATABASE_URL"
+        }
+    }
+}
