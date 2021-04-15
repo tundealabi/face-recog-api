@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const db = require("../db");
 const { validateImageOnReceive } = require("../middleware/validate");
 const faceRecognition = require("../utils/face-recognition");
 
